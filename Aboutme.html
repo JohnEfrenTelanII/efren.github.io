@@ -1,0 +1,229 @@
+<style>
+    .about-section {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 31px 80px 31px 26px;
+    }
+    
+    .content-wrapper {
+      align-self: center;
+      display: flex;
+      width: 100%;
+      max-width: 1197px;
+      flex-direction: column;
+    }
+    
+    .header {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      color: #305f6d;
+      white-space: nowrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font: 400 24px Lexend, sans-serif;
+    }
+    
+    .logo {
+      aspect-ratio: 1.34;
+      object-fit: contain;
+      object-position: center;
+      width: 187px;
+      max-width: 100%;
+    }
+    
+    .nav-menu {
+      align-self: start;
+      display: flex;
+      margin-top: 35px;
+      gap: 40px 53px;
+    }
+    
+    .section-title {
+      color: #000;
+      align-self: start;
+      margin: 50px 0 0 42px;
+      font: 900 128px Londrina Solid, sans-serif;
+    }
+    
+    .main-content {
+      display: flex;
+      margin-top: 6px;
+      width: 100%;
+      max-width: 1290px;
+      flex-direction: column;
+    }
+    
+    .content-container {
+      gap: 20px;
+      display: flex;
+    }
+    
+    .text-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 58%;
+      margin-left: 0;
+    }
+    
+    .text-wrapper {
+      display: flex;
+      margin-top: 98px;
+      flex-grow: 1;
+      flex-direction: column;
+      font-weight: 400;
+    }
+    
+    .job-title {
+      color: #305f6d;
+      font: 48px Lexend Zetta, sans-serif;
+    }
+    
+    .bio {
+      color: #000;
+      margin: 73px 65px 0 25px;
+      font: 36px Lexend, sans-serif;
+    }
+    
+    .image-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 42%;
+      margin-left: 20px;
+    }
+    
+    .image-wrapper {
+      background-color: #90f3fe;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 76px;
+    }
+    
+    .profile-image {
+      aspect-ratio: 0.71;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 141px;
+      z-index: 10;
+      margin-top: -17px;
+    }
+    
+    .cta-button {
+      border-radius: 20px;
+      background-color: #90fe9d;
+      align-self: start;
+      color: #fff;
+      margin: 52px 0 0 104px;
+      padding: 22px 70px 44px;
+      font: 400 36px Lexend, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .about-section {
+        padding: 0 20px;
+      }
+    
+      .content-wrapper {
+        max-width: 100%;
+      }
+    
+      .header {
+        max-width: 100%;
+        white-space: initial;
+      }
+    
+      .nav-menu {
+        max-width: 100%;
+        white-space: initial;
+      }
+    
+      .section-title {
+        max-width: 100%;
+        margin-top: 40px;
+        font-size: 40px;
+      }
+    
+      .main-content {
+        max-width: 100%;
+      }
+    
+      .content-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    
+      .text-column {
+        width: 100%;
+      }
+    
+      .text-wrapper {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    
+      .job-title {
+        max-width: 100%;
+        font-size: 40px;
+      }
+    
+      .bio {
+        max-width: 100%;
+        margin: 40px 10px 0 0;
+      }
+    
+      .image-column {
+        width: 100%;
+      }
+    
+      .image-wrapper {
+        max-width: 100%;
+        margin-top: 11px;
+        padding: 0 20px;
+      }
+    
+      .cta-button {
+        margin: 40px 0 0 10px;
+        padding: 0 20px;
+      }
+    }
+    </style>
+    
+    <section class="about-section">
+      <div class="content-wrapper">
+        <header class="header">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4bfcfc79f036631e825bac8803a9d4159dc4bab73ff37587cf3a962242b3cde?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="Company Logo" class="logo" />
+          <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="Aboutme.html">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+        <h1 class="section-title">About Me</h1>
+      </div>
+      <main class="main-content">
+        <div class="content-container">
+          <div class="text-column">
+            <div class="text-wrapper">
+              <h2 class="job-title">Graphic Designer & Front end Dev</h2>
+              <p class="bio">I am John Efren Telan, a Front End Developer, 20 years old studying at College of Mary Immaculate in Pandi, Bulacan in course of Bachelor of Science in Computer Science. I am doing Graphic Designing as a hobby.</p>
+            </div>
+          </div>
+          <div class="image-column">
+            <div class="image-wrapper">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/659ef508ee84a7edba13fad707f4d7883f31bb31193ad33d4dfb749bdb141d4d?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="John Efren Telan" class="profile-image" />
+            </div>
+          </div>
+        </div>
+        <button class="cta-button">See More</button>
+      </main>
+    </section>

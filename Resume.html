@@ -1,0 +1,337 @@
+<style>
+    .personal-info-section {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      padding: 39px 80px;
+    }
+    
+    @media (max-width: 991px) {
+      .personal-info-section {
+        padding: 0 20px;
+      }
+    }
+    
+    .header-container {
+      align-self: flex-start;
+      display: flex;
+      width: 100%;
+      max-width: 1182px;
+      gap: 20px;
+      color: #305f6d;
+      white-space: nowrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font: 400 24px Lexend, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .header-container {
+        max-width: 100%;
+        white-space: initial;
+      }
+    }
+    
+    .logo {
+      aspect-ratio: 1.34;
+      object-fit: contain;
+      object-position: center;
+      width: 187px;
+      max-width: 100%;
+    }
+    
+    .nav-menu {
+      align-self: flex-start;
+      display: flex;
+      margin-top: 21px;
+      gap: 40px 53px;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-menu {
+        max-width: 100%;
+        white-space: initial;
+      }
+    }
+    
+    .name-title {
+      color: #305f6d;
+      margin-top: 81px;
+      font: 400 40px Lexend Zetta, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .name-title {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    
+    .divider {
+      aspect-ratio: 333.33;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      margin-top: 52px;
+      max-width: 1186px;
+    }
+    
+    @media (max-width: 991px) {
+      .divider {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    
+    .section-title {
+      color: #305f6d;
+      text-align: center;
+      align-self: flex-start;
+      margin: 23px 0 0 68px;
+      font: 400 32px Lexend Zetta, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .section-title {
+        margin-left: 10px;
+      }
+    }
+    
+    .info-container {
+      align-self: flex-start;
+      display: flex;
+      gap: 17px;
+      margin: 30px 0 0 16px;
+    }
+    
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .address-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 51px;
+    }
+    
+    .contact-icon {
+      aspect-ratio: 0.74;
+      object-fit: contain;
+      object-position: center;
+      width: 37px;
+      margin-top: 18px;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-icon {
+        margin-right: 7px;
+      }
+    }
+    
+    .info-text {
+      align-self: flex-start;
+      display: flex;
+      margin-top: 5px;
+      flex-direction: column;
+      font-weight: 400;
+      flex-grow: 1;
+      flex-basis: 0;
+      width: fit-content;
+    }
+    
+    .address-text {
+      color: #000;
+      font: 32px Michroma, sans-serif;
+    }
+    
+    .contact-text {
+      color: #305f6d;
+      align-self: flex-start;
+      margin-top: 58px;
+      font: 24px Lexend, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-text {
+        margin-top: 40px;
+      }
+    }
+    
+    .email-container {
+      align-self: flex-start;
+      display: flex;
+      gap: 17px;
+      color: #000;
+      margin: 21px 0 0 16px;
+      font: 400 24px Michroma, sans-serif;
+    }
+    
+    .email-icon {
+      aspect-ratio: 1.64;
+      object-fit: contain;
+      object-position: center;
+      width: 51px;
+    }
+    
+    .email-text {
+      flex-basis: auto;
+      flex-grow: 1;
+    }
+    
+    .education-container {
+      align-self: flex-start;
+      display: flex;
+      margin-top: 18px;
+      width: 819px;
+      max-width: 100%;
+      gap: 40px 73px;
+      font-weight: 400;
+      flex-wrap: wrap;
+    }
+    
+    .education-title {
+      color: #305f6d;
+      text-align: center;
+      flex-grow: 1;
+      width: 210px;
+      flex-basis: auto;
+      font: 32px Lexend Zetta, sans-serif;
+    }
+    
+    .education-item {
+      color: #000;
+      flex-grow: 1;
+      width: 432px;
+      flex-basis: auto;
+      font: 24px Michroma, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .education-item {
+        max-width: 100%;
+      }
+    }
+    
+    .skills-container {
+      align-self: flex-start;
+      display: flex;
+      width: 481px;
+      max-width: 100%;
+      gap: 40px 51px;
+      font-weight: 400;
+      flex-wrap: wrap;
+      margin: 9px 0 0 21px;
+    }
+    
+    .skills-title {
+      color: #305f6d;
+      text-align: center;
+      align-self: flex-start;
+      flex-grow: 1;
+      width: 115px;
+      font: 32px Lexend Zetta, sans-serif;
+    }
+    
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      color: #000;
+      flex-grow: 1;
+      flex-basis: 0;
+      width: fit-content;
+      font: 24px Lexend, sans-serif;
+    }
+    
+    .skill-item {
+      align-self: center;
+      margin-top: 14px;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <section class="personal-info-section">
+      <header class="header-container">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4bfcfc79f036631e825bac8803a9d4159dc4bab73ff37587cf3a962242b3cde?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="Company Logo" class="logo" />
+        <nav class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="Aboutme.html">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      
+      <h1 class="name-title">TELAN, JOHN EFREN VENEZUELA</h1>
+      
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/47431e5c5d40a61b1da9bd429de807178025b619a71a0799820e228888efe9ee?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="" class="divider" />
+      
+      <h2 class="section-title">Personal Info:</h2>
+      
+      <div class="info-container">
+        <div class="icon-container">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/351ad33b42d3be4e3d1f69749d563a2b3af79901cd740a4994a1ca0b770b2540?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="Address Icon" class="address-icon" />
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3cc4cae7715ca40570defc82b77662bb44ac651b2a53e52043e004219b117fe?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="Contact Icon" class="contact-icon" />
+        </div>
+        <div class="info-text">
+          <p class="address-text">
+            <span class="visually-hidden">Address:</span>
+            ****************************
+          </p>
+          <p class="contact-text">Contact: **********</p>
+        </div>
+      </div>
+      
+      <div class="email-container">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4613ea8a791c20250f6f321e1ca8b05c2b4d977f5b6d8a85c930450e8616b49c?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="Email Icon" class="email-icon" />
+        <p class="email-text">
+          <span class="visually-hidden">Email:</span>
+          telanjohnefren31@gmail.com
+        </p>
+      </div>
+      
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/47431e5c5d40a61b1da9bd429de807178025b619a71a0799820e228888efe9ee?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="" class="divider" />
+      
+      <div class="education-container">
+        <h3 class="education-title">Education:</h3>
+        <p class="education-item">
+          <span class="visually-hidden">Elementary:</span>
+          Sto. Cristo Elementary School
+        </p>
+      </div>
+      
+      <p class="education-item">
+        <span class="visually-hidden">Secondary:</span>
+        Ernesto Rondon High School
+      </p>
+      
+      <p class="education-item">Gardner College</p>
+      
+      <p class="education-item">
+        <span class="visually-hidden">Tertiary:</span>
+        College of Mary Immaculate
+      </p>
+      
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/47431e5c5d40a61b1da9bd429de807178025b619a71a0799820e228888efe9ee?placeholderIfAbsent=true&apiKey=4431cf17884841c5b91931a92a197495" alt="" class="divider" />
+      
+      <div class="skills-container">
+        <h3 class="skills-title">Skills:</h3>
+        <ul class="skills-list">
+          <li>HTML, CSS, JAVASCRIPT</li>
+          <li class="skill-item">WORD, EXCEL ETC.</li>
+        </ul>
+      </div>
+    </section>
